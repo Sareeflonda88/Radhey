@@ -8,7 +8,7 @@ from config import LOGGER_ID
 
 @app.on_message(filters.regex(r'https?://.*instagram[^\s]+') & filters.incoming)
 async def link_handler(client, message):
-    if len(message.command) < 2:
+    if len(message.regex) < 2:
         await message.reply_text(
             "Pʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴛʜᴇ Iɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ URL ᴀғᴛᴇʀ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ"
         )
