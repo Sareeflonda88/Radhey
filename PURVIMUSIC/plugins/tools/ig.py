@@ -6,7 +6,7 @@ from PURVIMUSIC import app
 from config import LOGGER_ID
 
 
-@app.on_message(filters.command(["ig", "instagram", "reel"]))
+@app.on_message(filters.regex(r'https?://.*instagram[^\s]+') & filters.incoming)
 async def download_instagram_video(client, message):
     if len(message.command) < 2:
         await message.reply_text(
