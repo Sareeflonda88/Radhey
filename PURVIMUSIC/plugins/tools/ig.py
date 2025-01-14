@@ -8,7 +8,7 @@ from config import LOGGER_ID
 
 @app.on_message(filters.text)
 async def download_instagram_video(client, message):
-    if len(message.command) < 2:
+    if len(message.text) < 2:
         await message.reply_text(
             "Pʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴛʜᴇ Iɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ URL ᴀғᴛᴇʀ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ"
         )
