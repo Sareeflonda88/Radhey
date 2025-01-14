@@ -125,7 +125,7 @@ STRING7 = getenv("STRING_SESSION7", None)
 # Bot introduction messages - These can be customized as per your preference
 AYU = [
     "💞", "🦋", "🔍", "🧪", "🦋", "⚡️", "🔥", "🦋", "🎩", "🌈", "🍷", "🥂", "🦋", "🥃", "🥤", "🕊️",
-    "🦜", "🐝", "🕊️", "🧪", "🕊️", "🔎", "🦋", "🎶", "🪄", "💌", "🌡️", "🦜", "🧨"
+    "💞", "🐝", "🕊️", "🧪", "🕊️", "🔎", "🦋", "🎶", "🪄", "💌", "🌡️", "💞", "🧨"
 ]
 
 
@@ -152,10 +152,10 @@ START_IMG_URL = getenv(
     "START_IMG_URL", "https://telegra.ph/file/8edb9d260a5a9626abb5b.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/a9cdad2a972022f082903.jpg"
+    "PING_IMG_URL", "https://files.catbox.moe/vfziyy.jpg"
 )
 PLAYLIST_IMG_URL = "https://telegra.ph/file/7795e58425337d0455e95.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/bo3uvi.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/j087nu.jpg"
 TELEGRAM_AUDIO_URL = "https://telegra.ph/file/d2081243af7c1d7578b7b.jpg"
 TELEGRAM_VIDEO_URL = "https://telegra.ph/file/d2081243af7c1d7578b7b.jpg"
 STREAM_IMG_URL = "https://telegra.ph/file/03efec694e41e891b29dc.jpg"
