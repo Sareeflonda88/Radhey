@@ -25,13 +25,13 @@ async def link_handler(app, message):
     link = message.matches[0].group(0)
     global headers
     try:
-        m = await message.reply_text("thank you for using me")
+        m = await message.reply_text("ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ᴍᴇ..")
         url= link.replace("instagram.com","ddinstagram.com")
         url=url.replace("==","%3D%3D")
         if url.endswith("="):
-           dump_file=await message.reply_video(url[:-1],caption="Thank you for using")
+           dump_file=await message.reply_video(url[:-1],caption="ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ᴍᴇ..")
         else:
-            dump_file=await message.reply_video(url,caption="Thank you for using")
+            dump_file=await message.reply_video(url,caption="ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ᴍᴇ..")
         
         
     except Exception as e:
@@ -59,9 +59,9 @@ async def link_handler(app, message):
                       return await message.reply("oops something went wrong")
                try:
                    if ddinsta:
-                      dump_file=await message.reply_video(content_value,caption="Thank you for using")
+                      dump_file=await message.reply_video(content_value,caption="ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ᴍᴇ..")
                    else:
-                       dump_file=await message.reply_video(content_value, caption="Thank you for using")
+                       dump_file=await message.reply_video(content_value, caption="ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ᴍᴇ..")
                except:
                    downfile=f"{os.getcwd()}/{random.randint(1,10000000)}"
                    with open(downfile,'wb') as x:
@@ -80,7 +80,7 @@ async def link_handler(app, message):
                      com=await message.reply_text(meta[i])
                      await asyncio.sleep(1)
                      try:
-                        dump_file=await message.reply_video(com.text,caption="Thank you for using")
+                        dump_file=await message.reply_video(com.text,caption="ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ᴍᴇ..")
                         await com.delete()
                      except:
                          pass 
@@ -92,12 +92,12 @@ async def link_handler(app, message):
                   else:
                       return await message.reply("Oops something went wrong")
                   try:
-                     dump_file=await message.reply_video(meta[0], caption="Thank you for using")
+                     dump_file=await message.reply_video(meta[0], caption="ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ᴍᴇ..")
                   except:
                       com=await message.reply(meta[0])
                       await asyncio.sleep(1)
                       try:
-                          dump_file=await message.reply_video(com.text,caption="Thank you for using")
+                          dump_file=await message.reply_video(com.text,caption="ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ᴍᴇ..")
                           await com.delete()
                       except:
                           pass
@@ -109,7 +109,7 @@ async def link_handler(app, message):
             
           #     await message.reply(tracemsg)
             ##optinal 
-            await message.reply(f"400: Sorry, Unable To Find It  try another or report it  to @masterolic or support chat @spotify_supportbot 🤖  ")
+            await message.reply(f"400: Sorry, Unable To Find It  try another or report it  to @APNA_SYSTEM or support chat @Exampurrs 🤖  ")
 
         finally:
             
